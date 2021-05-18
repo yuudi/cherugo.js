@@ -1,0 +1,29 @@
+body{
+    overflow-x: hidden;
+}
+header>h2{
+    text-align: center;
+}
+div.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+div.content>textarea{
+    width: 30em;
+    height: 12em;
+    margin: 1em;
+}
+div.content>.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+footer>p{
+	font-size: 10px;
+    text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
