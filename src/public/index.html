@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>Cheru Decoder</title>
         <link rel="icon" href="data:;" />
         <link rel="stylesheet" type="text/css" href="./index.css" />
@@ -11,34 +12,44 @@
         <header>
             <h2>Cheru Encoder</h2>
         </header>
-        <div class="content">
-            <textarea id="decoded-area" placeholder="阿巴阿巴"></textarea>
-            <div class="buttons">
-                <button id="encode-btn">Encode &gt;&gt;</button>
-                <button id="decode-btn">&lt;&lt; Decode</button>
+        <div id="content">
+            <div id="coding">
+                <textarea id="decoded-area" placeholder="阿巴阿巴"></textarea>
+                <div class="buttons">
+                    <button id="encode-btn">
+                        Encode
+                        <span class="horizontal-arrow">&gt;&gt;</span>
+                        <span class="vertical-arrow">↓↓</span>
+                    </button>
+                    <button id="decode-btn">
+                        <span class="horizontal-arrow">&lt;&lt;</span>
+                        <span class="vertical-arrow">↑↑</span>
+                        Decode
+                    </button>
+                </div>
+                <textarea id="encoded-area" placeholder="切噜～♪"></textarea>
             </div>
-            <textarea id="encoded-area" placeholder="切噜～♪"></textarea>
+            <footer>
+                <p>
+                    编码规则见<a href="https://bbs.nga.cn/read.php?tid=21636504"
+                        >介绍</a
+                    ><br />
+                    改编自<a
+                        href="https://github.com/Ice-Cirno/HoshinoBot/blob/master/hoshino/modules/priconne/cherugo.py"
+                        >Hoshino cherugo</a
+                    ><br />
+                    使用了轮子<a href="http://www.1kjs.com/lib/widget/gbk/"
+                        >gbk encoder</a
+                    ><br />
+                    页面样式取自<a
+                        href="https://github.com/sym233/core-values-encoder"
+                        >core-values-encoder</a
+                    ><br />
+                    源码下载<a href="https://github.com/pcrbot/cherugo.js"
+                        >github</a
+                    >
+                </p>
+            </footer>
         </div>
-        <footer>
-            <p>
-                编码规则见<a href="https://bbs.nga.cn/read.php?tid=21636504"
-                    >介绍</a
-                ><br />
-                改编自<a
-                    href="https://github.com/Ice-Cirno/HoshinoBot/blob/master/hoshino/modules/priconne/cherugo.py"
-                    >Hoshino cherugo</a
-                ><br />
-                使用了轮子<a href="http://www.1kjs.com/lib/widget/gbk/"
-                    >gbk encoder</a
-                ><br />
-                页面样式取自<a
-                    href="https://github.com/sym233/core-values-encoder"
-                    >core-values-encoder</a
-                ><br />
-                源码下载<a href="https://github.com/pcrbot/cherugo.js"
-                    >github</a
-                >
-            </p>
-        </footer>
     </body>
 </html>

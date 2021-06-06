@@ -1,29 +1,61 @@
-body{
-    overflow-x: hidden;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-header>h2{
+body {
+    min-height: 100%;
+}
+header > h2 {
     text-align: center;
 }
-div.content{
+div#content {
+    min-height: 100%;
+}
+div#coding {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-div.content>textarea{
-    width: 30em;
-    height: 12em;
-    margin: 1em;
+div#coding > textarea {
+    height: 200px;
+    margin: 20px;
+    width: 30%;
 }
-div.content>.buttons{
+div#coding > .buttons {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-footer>p{
-	font-size: 10px;
+footer > p {
+    font-size: 10px;
     text-align: center;
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translate(-50%, -50%);
+    bottom: 0;
+    left: 50%;
+}
+.vertical-arrow {
+    display: none;
+}
+@media (prefers-color-scheme: dark) {
+    * {
+        background: #1e1f23;
+        color: #c4c5c9;
+    }
+}
+@media (max-width: 599px) {
+    div#coding {
+        flex-direction: column;
+    }
+    div#coding > textarea {
+        width: auto;
+    }
+    div#coding > .buttons {
+        flex-direction: row;
+    }
+    .horizontal-arrow {
+        display: none;
+    }
+    .vertical-arrow {
+        display: block;
+    }
 }
