@@ -2,8 +2,19 @@
 
 <https://pcrbot.github.io/cherugo.js/>
 
-## build
+## use
 
 ```sh
-webpack ./src/cherugo.js
+npm i "cherugo@git+https://github.com/yuudi/cherugo.js.git"
+```
+
+```js
+import { encode, decode } from "cherugo";
+console.log(cherugo.encode("你好"));
+```
+
+## build web
+
+```sh
+webpack ./web/index.js
 ```

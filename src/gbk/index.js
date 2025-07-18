@@ -1,4 +1,4 @@
-const charMap = require("./char-map");
+import charMap from './char-map.js';
 
 function isAscii(unicode) {
     return unicode == 0x20ac || (unicode <= 0x007f && unicode >= 0x0000);
@@ -76,4 +76,4 @@ class Encoder {
     }
 }
 
-module.exports = Encoder;
+export default Encoder;

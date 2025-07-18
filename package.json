@@ -1,0 +1,10 @@
+{
+  "name": "cherugo",
+  "type": "module",
+  "version": "0.2.0",
+  "main": "./src/cherugo.js",
+  "types": "./src/cherugo.d.ts",
+  "files": [
+    "src"
+  ]
+}
